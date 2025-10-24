@@ -1,21 +1,21 @@
 <?php
 
-class Luaslingkaran {
+class LuasLingkaran {
 
-    public const phi = 3.14;
+    const PHI = 3.14;
 
-    public int $jari;
+    public $jari;
 
     public function tampil($nama = 'ban') {
-        $rumus = LuasLingkaran::phi * ($this->jari * $this->jari);
+        $rumus = LuasLingkaran::PHI * ($this->jari * $this->jari);
         echo "Lingkaran {$nama} ini hasilnya adalah: {$rumus}";
     }
 
     public static function testing() {
-        echo"</br>";
+        echo "</br>";
         echo "ini testing static";
-    
     }
+
 }
 
 $lingkaran = new LuasLingkaran();
